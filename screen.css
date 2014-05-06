@@ -1,0 +1,38 @@
+body {
+    padding-top: 45px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 100;
+    font-size: 19px;
+    line-height: 27px;
+    color: #03667F;
+    text-align: center;
+}
+
+#main {
+    margin: 0;
+}
+
+#fb-like {
+    position: absolute;
+	margin-left: 50%;
+}
+
+h1 {
+    font-size: 76px;
+    font-family: ChunkFiveRegular,'Open Sans',sans-serif;
+    line-height: 81px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 800;
+	color: #0599BF;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0 0 13.5px;
+}
