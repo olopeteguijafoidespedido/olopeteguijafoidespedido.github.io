@@ -27,7 +27,7 @@
       <h1>Sim</h1>
       <img src="images/line-divider.png">
       <p>
-        Julen Lopetegui já não é treinador do FC Porto.
+        Julen Lopetegui foi treinador do FC Porto por <span id="days"></span> dias, <span id="hours"></span> horas, <span id="minutes"></span> minutos e <span id="seconds"></span> segundos.
       </p>
       <div class="adsense-container">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -41,6 +41,26 @@
       </div>
     </div>
   </body>
+  <script>
+    var beginDate = Date.UTC(2014, 04, 06, 12, 0, 0);
+    var endDate = Date.UTC(2016, 01, 08, 10, 28, 0);
+  
+    var diff = endDate - beginDate;
+    var second = 1000;
+    var minute = second * 60;
+    var hour = minute * 60;
+    var day = hour * 24;
+  
+    var days = Math.floor(diff / day);
+    var hours = Math.floor((diff % day) / hour);
+    var minutes = Math.floor((diff % hour) / minute);
+    var seconds = Math.floor((diff % minute) / second);
+  
+    document.getElementById('days').innerHTML = days;
+    document.getElementById('hours').innerHTML = hours;
+    document.getElementById('minutes').innerHTML = minutes;
+    document.getElementById('seconds').innerHTML = seconds;
+  </script>  
   <script>
     (function(i, s, o, g, r, a, m) {
     	i['GoogleAnalyticsObject'] = r;
